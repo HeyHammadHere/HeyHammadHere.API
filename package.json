@@ -4,7 +4,7 @@
   "description": "API Developed Using Node JS By HeyHammadHere",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
