@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-const mysql = require("mysql");
 const path = require("path");
+const mysql = require("mysql");
 app.use(express.static(__dirname));
 app.get("/", (req, resp) => {
   resp.sendFile(path.join(__dirname, "index.html"));
