@@ -7,4 +7,7 @@ app.get("/", (req, resp) => {
   resp.sendFile(path.join(__dirname, "index.html"));
   resp.end();
 });
+app.get("/api", (res, resp) => {
+  resp.send({ name: "Hammad", age: 22 });
+});
 app.listen(process.env.PORT);
