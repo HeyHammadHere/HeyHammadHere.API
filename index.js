@@ -28,4 +28,4 @@ app.get("/contact", (res, resp) => {
 app.get("*", (req, resp) => {
   resp.sendFile(path.join(__dirname, "error.html"));
 });
-app.listen(80);
+app.listen(process.env.PORT);
