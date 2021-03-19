@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const mysql = require("mysql");
-app.use(express.static(path.join(__dirname, "public")));
+app.use("/public", express.static("public"));
 app.get("/", (req, resp) => {
   resp.sendFile(path.join(__dirname, "index.html"));
   resp.end();
